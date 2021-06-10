@@ -1,0 +1,10 @@
+.create_group{
+  padding-top: 80px;
+  & select{
+    width: 100%;
+    height: 30px;
+    border: solid 1px #c4ced8;
+    border-radius: 5px;
+    color: #3b3e3c;
+  }
+}

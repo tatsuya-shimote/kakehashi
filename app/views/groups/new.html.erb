@@ -1,0 +1,24 @@
+<div class = "create_group">
+  <div class = "container">
+    <h2>グループ作成</h2>
+    <%= form_with(model: @group, local: true) do |f| %>
+    <%= render 'layouts/error_messages', object: f.object %>
+      <span>作成者</span>
+      <p><%= @group.user.name %></p>
+
+      <%= f.label :learning, "学習言語" %>
+      <%= f.select :learning, [["HTML/CSS","HTML/CSS"],["JavaScript","JavaScript"],["Ruby/Ruby on Rails","Ruby/Ruby on Rails"],
+      ["PHP/Laravel","PHP/Laravel"],["Python/Django","Python/Django"],["Java","Java"]], {include_blank: "言語を選択してください"}, {class: 'custom-select'} %>
+      
+      <%= f.label :limit, "参加できる人数" %>
+      <%= f.select :limit, [[2,2],[3,3],[4,4],[5,5]], {include_blank: "人数を選択してください"}, {class: 'custom-select'} %>
+
+      <%= f.label :content, "メッセージ" %>
+      <%= f.text_area :content, class: 'form-control' %>
+      <div class = "login-btn">
+        <%= f.submit "登録", class: "btn btn-success" %>
+      </div>
+      
+      <% end %>
+  </div>
+</div>

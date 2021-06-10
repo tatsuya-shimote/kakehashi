@@ -1,0 +1,7 @@
+<header>
+  <% if logged_in? %>
+    <%= render "layouts/nav_login" %>
+  <% else %>
+   <%= render "layouts/nav_toppage" %>
+  <% end %>
+</header>

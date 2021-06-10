@@ -1,0 +1,56 @@
+<div class = "user_profile">
+  <div class = "container">
+    <h2>プロフィール</h2>
+    <div id = "prof" class = "d-flex justify-content-between">
+      <div id = "user-profile">
+        <% if @user.image? %>
+          <%= image_tag @user.image.to_s, class: 'myprof-img' %>
+        <% else %>
+          <%= image_pack_tag 'media/images/noimage.jpeg', id: "noimage", alt: "ユーザープロフィール画像" %>
+        <% end %>
+        <span id = "user-name"><%= @user.name %></span>
+      </div>
+      <% if current_user? %>
+        <div class = "user_edit_btn">
+          <%= link_to "編集", edit_user_path(@user), class: 'btn btn-md btn-primary'%>
+        </div>
+      <% end %>
+    </div>
+    <% unless @user.content.blank? %>
+    <div class = "message over-wrap">
+      <%= @user.content %>
+    </div>
+    <% end %>
+    <h5>現在参加中のグループ</h5>
+    <div class = "row">
+      <% if current_user == @user %>
+      
+        <% if @user.group.empty? %>
+          <div class = "col-md-6">
+            <%= render "layouts/not_join_group" %>
+          </div>
+        <% else %>
+          <div class = "col-md-6">
+            <%= render "layouts/card", group: @user.group.first %>
+          </div>
+        <% end %>
+          <div class = "create_group_btn col-md-6">
+            <%= link_to "グループ作成", new_group_path, class: 'btn btn-md btn-primary create-btn' %>
+          </div>
+          
+      <% else %>
+      
+        <% if @user.group.empty? %>
+          <div class = "col-md-6 offset-md-3">
+            <%= render "layouts/not_join_group" %>
+          </div>
+        <% else %>
+          <div class = "col-md-6 offset-md-3">
+            <%= render "layouts/card", group: @user.group.first %>
+          </div>
+        <% end %>
+        
+      <% end %>
+    </div>
+  </div>
+</div>

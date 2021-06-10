@@ -1,0 +1,10 @@
+.show_group{
+  padding-top: 80px;
+  & .chunk{
+    margin: 25px 0;
+    border-bottom: solid 1px gray;
+    & .card-subtitle{
+      font-size: 17px;
+    }
+  }
+}

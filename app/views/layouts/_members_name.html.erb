@@ -1,0 +1,6 @@
+<div class = "chunk">
+  <span class = "card-subtitle">参加者：</span>
+  <% group.member.each do |user| %>
+    <%= link_to "#{user.name}", user_path(user), class: "mr-2" %>
+  <% end %>
+</div>

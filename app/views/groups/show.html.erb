@@ -1,0 +1,18 @@
+<div class = "show_group">
+  <div class = "container">
+    <h2>グループ詳細</h2>
+      <%= render 'layouts/group_info', group: @group %>
+      <%= render 'layouts/members_name', group: @group %>
+      <h5>メッセージ</h5>
+      <div class = "message over-wrap">
+        <%= @group.content %>
+      </div>
+      <% if current_user.group.find_by(id: params[:id]) == @group %>
+        <%= link_to "ルームに移動", members_group_path(@group), class: "btn btn-primary" %>
+      <% elsif @group.members.count < @group.limit%>
+        <%= link_to "グループに参加", join_group_path(@group), class: "btn btn-primary" %>
+      <% else %>
+        <a href="#" class="btn btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">満員</a>
+      <% end %>
+  </div>
+</div>

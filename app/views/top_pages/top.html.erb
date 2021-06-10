@@ -1,0 +1,61 @@
+<div class = "top">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-sm-6 top_contents">
+                <h1>Kakehashi</h1>
+                <p>エンジニアを目指す仲間と繋がり，協働学習ができる</p>
+                <div class = "signup-btn">
+                    <%= link_to "今すぐ始める", signup_path, class: "btn btn-lg btn-success" %>
+                </div>
+            </div>
+            <div class = "col-sm-6  d-sm-block d-none">
+                <%= image_pack_tag 'media/images/top_image.png', class: "imgs", alt: "トップ画像https://storyset.com/work" %>
+            </div>
+        </div>
+    </div>
+</div>
+<div class = "container">
+    <div class = "introduction">
+        
+        <div class = "points row">
+            <div class = "point_content col-md-6">
+                <h3>プログラミング学習仲間とチャットで協働学習</h3>
+                チャットグループを作成または
+                チャットグループに参加することでエンジニア
+                を目指す仲間と繋がり，
+                一緒に学習をしよう。<br>
+                <span>※チャットグループは0人になると自動的に削除されます。</span>
+            </div>
+            <div class = "point_image col-md-6">
+                <%= image_pack_tag 'media/images/image1.png', class: "imgs", alt: "画像１https://storyset.com/work" %>
+            </div>
+        </div>
+        <div class = "points row">
+            <div class = "point_content col-md-6 order-md-1">
+                <h3>アイデア・知識が広がる</h3>
+                意見を交えることで知識が広がる。
+                新しいアイデアが浮かぶ。
+                ワクワクが止まらない。   
+            </div>
+            <div class = "point_image col-md-6 order-md-0">
+                <%= image_pack_tag 'media/images/image2.png', class: "imgs", alt: "画像２https://storyset.com/work" %>
+            </div>
+        </div>
+        <div class = "points row">
+            <div class = "point_content col-md-6">
+                <h3>学習意欲の維持，向上へ</h3>
+                同じ境遇にいるからこそ
+                お互いの気持ちを理解できる。
+                良き理解者になろう。
+                良き理解者と繋がろう。  
+            </div>
+            <div class = "point_image col-md-6">
+                <%= image_pack_tag 'media/images/image3.png', class: "imgs", alt: "画像３https://storyset.com/work" %>
+            </div>
+        </div>
+    </div>
+</div>
+<div class = "signup-btn">
+    <%= link_to "今すぐ始める", signup_path, class: "btn btn-lg btn-success" %>
+</div>
+画像引用：<a href="https://storyset.com/work">Illustration by Freepik Storyset</a>

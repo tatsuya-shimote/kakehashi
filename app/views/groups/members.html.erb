@@ -1,0 +1,29 @@
+<div class = "chatroom">
+  <div class = "container">
+    <%= link_to "Chat room", group_path(@group), class: "room-logo" %>
+    <div class = "row">
+      <div class = "col-md-8 order-md-1 scroll over-wrap" id='posts' data-group_id="<%= @group.id %>">
+        <%= render @posts %>
+      </div>
+      <div class="col-md-4 order-md-0">
+        <%= current_user.name %>
+        <%= form_with(model: @post, remote: true) do |f| %>
+          <div id="validates-error-message"></div>
+          <div class="form-group">
+            <%= text_field_tag 'post[group_id]', "#{@group.id}", type: "hidden" %>
+            <%= f.text_area :message, class: 'form-control', id: 'post-content', rows: 3, data: { behavior: 'chat_speaker' } %>
+          </div>
+          <%= f.submit 'Post', class: 'btn btn-primary in-group-btn', id: "post-btn" %>
+        <% end %>
+         <%= render 'layouts/members_name', group: @group %>
+        <% if @group.members.count == 1 %>
+          あなたが退出するとこのグループは自動的に削除されます。
+          <%= link_to "退出してグループを削除", exit_group_path(@group), method: :delete , class: "btn btn-outline-primary" %>
+        <% else %>
+          <%= link_to "退出", exit_group_path(@group), method: :delete , class: "btn btn-outline-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+

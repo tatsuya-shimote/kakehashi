@@ -1,0 +1,13 @@
+<div class = "group-lists">
+    <div class = "container">
+        <h2>
+            グループ一覧
+        </h2>
+        <%= render 'group_card', groups: @groups %>
+        <%= paginate @groups %>
+        <div class = "create_group_btn">
+            <%= link_to "グループを作成", new_group_path, class: "btn btn-lg btn-primary" %>
+        </div>
+    </div>
+</div>
+

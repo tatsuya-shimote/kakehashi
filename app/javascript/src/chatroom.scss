@@ -1,0 +1,38 @@
+.chatroom{
+  padding-top: 80px;
+}
+
+.post{
+  border: solid 1px gray;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: white;
+  color: #59646d;
+  letter-spacing: 1.5px;
+  & .user_messages{
+    margin: 5px;
+  }
+}
+
+//部分スクロール
+.scroll {
+height: 500px;
+overflow-y: scroll;
+}
+
+
+.room-logo{
+  font-size: 40px;
+  font-weight: 600;
+  font-family: fangsong;
+  color: #153b61;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: #057ff9;
+  }
+}
+
+.in-group-btn{
+  width: 100%;
+}

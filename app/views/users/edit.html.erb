@@ -1,0 +1,26 @@
+<div class = "user-edit">
+  <div class = "container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>プロフィール編集</h2>
+        
+        
+        <%= form_with(model: @user, local: true) do |f| %>
+        <%= render 'layouts/error_messages', object: f.object %>
+          <%= f.label :name, "名前" %>
+          <%= f.text_field :name, class: 'form-control' %>
+          
+          <%= f.label :image, "プロフィール画像" %>
+          <%= f.file_field :image, class: 'form-control' %>
+    
+          <%= f.label :content, "プロフィール文" %>
+          <%= f.text_area :content, class: 'form-control' %>
+          
+          <div class = "save-btn">
+          <%= f.submit "保存", class: "btn btn-primary" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

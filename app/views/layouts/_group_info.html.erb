@@ -1,0 +1,11 @@
+<div class = "chunk">
+  <span><%= group.created_at.strftime("%m/%d %H:%M")%></span>
+</div>
+<div class = "chunk">
+  <span class = "card-subtitle">作成者：</span>
+  <%=link_to group.user.name, user_path(group.user)%>
+</div>
+<div class = "chunk">
+  <span class = "card-subtitle">学習言語：</span>
+  <span><%= group.learning %></span>
+</div>

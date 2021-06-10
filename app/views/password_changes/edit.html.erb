@@ -1,0 +1,19 @@
+<div class = "container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 login-form">
+      <h2 class = "text-center">パスワードの変更</h2>
+      <%= form_with(model: @user, url: password_change_path(params[:id]),
+                  local: true) do |f| %>
+        <%= render 'layouts/error_messages', object: f.object %>
+        <%= f.label :password, "新しいパスワード" %>
+        <%= f.password_field :password, class: 'form-control' %>
+  
+        <%= f.label :password_confirmation, "パスワード確認" %>
+        <%= f.password_field :password_confirmation, class: 'form-control' %>
+        <div class = "login-btn">
+        <%= f.submit "変更", class: "btn btn-primary" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

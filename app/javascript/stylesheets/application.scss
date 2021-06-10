@@ -1,0 +1,51 @@
+@import '~bootstrap/scss/bootstrap';
+@import '../src/top_page';
+@import '../src/nav';
+@import '../src/footer';
+@import '../src/form';
+@import '../src/group_list';
+@import '../src/card';
+@import '../src/user_show';
+@import '../src/user_edit';
+@import '../src/message'; //User＆Groupのメッセージ文
+@import '../src/show_group';
+@import '../src/chatroom';
+@import '../src/create_group';
+
+
+
+
+//スマホを横に傾けた時の幅
+@media (min-width: 480px) {
+    @import "src/480up_image_size";
+}
+
+//タブレット
+@media (min-width: 600px) {
+    @import "src/600up_image_size";
+}
+
+//タブレット
+@media (min-width: 768px) {
+    @import "src/768up_image_size";
+    @import "src/768up_create_btn";
+}
+
+body {
+  background-color: #EEFCF6;
+}
+
+a{
+  color: #7089EB;
+}
+
+.btn-primary{
+    background-color: #7089EB;
+}
+h2{
+    border-bottom: solid 1px lightgray;
+}
+
+.over-wrap{
+  word-wrap: break-word;
+}

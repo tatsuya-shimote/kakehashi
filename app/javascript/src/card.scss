@@ -1,0 +1,27 @@
+.card{
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+ 
+.card-body{
+  & .chunk{
+    padding: 10px 0;
+  }
+  span{
+    display: inline-block;
+    &.card-subtitle{
+      font-size: 17px;
+      font-weight: 600;
+      margin-right: 20px;
+    }
+  }
+  
+  & p{
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  & .group-detail{
+    text-align: right;
+  }
+}

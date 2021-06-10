@@ -1,0 +1,8 @@
+.points {
+    & .point_image{
+      & .imgs{
+        height: 300px;
+        width: 300px;
+      }
+    }
+}

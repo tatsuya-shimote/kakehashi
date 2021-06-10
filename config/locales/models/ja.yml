@@ -1,0 +1,14 @@
+ja:
+  activerecord:
+    attributes: #属性の言語を変える。
+      post: #モデル名
+        message: メッセージ #属性名
+      user:
+        name: 名前
+        email: メールアドレス
+        password: パスワード
+        password_confirmation: パスワード確認
+      group:
+        content: メッセージ
+        limit: 参加できる人数
+        learning: 学習言語

@@ -1,0 +1,14 @@
+<div class = "container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 login-form">
+      <h2 class = "text-center">パスワードの変更</h2>
+      
+      <%= form_with(url: password_changes_path, scope: :password_changes, local: true) do |f| %>
+        <%= f.label :eamil, "メールアドレス" %>
+        <%= f.email_field :email, class: 'form-control' %>
+        <div class = "login-btn">
+        <%= f.submit "送信", class: "btn btn-success" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
