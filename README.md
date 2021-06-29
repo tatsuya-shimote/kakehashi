@@ -32,6 +32,6 @@ Twitterで「同じ未経験で学習している人と励ましあったり，�
 ## プロフィール編集画面
 名前，プロフィール画像，プロフィール文をここで編集することができます。
 <img width="1321" alt="kakehashi_screen_shot_7" src="https://user-images.githubusercontent.com/82424928/123731781-d0efaf00-d8d3-11eb-8543-e9f42966bd6b.png">
-保存ボタンを押すと詳細画面に戻り，反映されていることが確認できます。(Railsチュートリアル学習した人には分かるはず...)
+保存ボタンを押すと詳細画面に戻り，反映されていることが確認できます。(Railsチュートリアルを学習した人には分かるはず...)
 <img width="1335" alt="kakehashi_screen_shot_8" src="https://user-images.githubusercontent.com/82424928/123731872-01374d80-d8d4-11eb-81d8-f4ecd0f6a885.png">
 
