@@ -1,24 +1,10 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Kakehashi
+同じ言語を学習している人たちが交流，学習できる場を作るグループチャットアプリです。  
+(レスポンシブ対応していますので，PC，タブレット，
+# 作成した目的
+Twitterで「同じ未経験で学習している人と励ましあったり，相談しあったりしたい」といった趣旨のツイート多く見かけました。  
+そこで、同じ境遇の人たちが繋がって，ともに学習していける環境を作りたいと思い，このアプリを作りました。
+# 使い方
+## グループ一覧画面
+ログインもしくは登録後はまずこちらに遷移します。
+<img src="kakehashi_screenshots/kakehashi_screen_shot_1" alt="グループ一覧画面" title="attach:cat" width="200" height="200">
