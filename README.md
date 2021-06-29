@@ -20,3 +20,17 @@ Twitterで「同じ未経験で学習している人と励ましあったり，�
 ## グループチャットルーム画面
 グループ詳細ページから参加，もしくはグループを作成するとこの画面に遷移します。意見交換等を行い，みんなで成長していきます。
 <img width="1337" alt="kakehashi_screen_shot_5" src="https://user-images.githubusercontent.com/82424928/123731318-e1ebf080-d8d2-11eb-82e0-ae113354fdb3.png">
+
+## プロフィール画面
+右上のメニューからプロフィール画面に遷移することができます。
+<img width="1430" alt="kakehashi_screen_shot_10" src="https://user-images.githubusercontent.com/82424928/123732045-48bdd980-d8d4-11eb-9bab-1e960e495987.png">
+
+プロフィール画面では自分が参加しているグループの確認や，プロフィールの編集をすることができます。
+<img width="1312" alt="kakehashi_screen_shot_6" src="https://user-images.githubusercontent.com/82424928/123731656-8bcb7d00-d8d3-11eb-8bbd-e77677cd0583.png">
+
+## プロフィール編集画面
+名前，プロフィール画像，メッセージをここで編集することができます。
+<img width="1321" alt="kakehashi_screen_shot_7" src="https://user-images.githubusercontent.com/82424928/123731781-d0efaf00-d8d3-11eb-8543-e9f42966bd6b.png">
+保存ボタンを押すと詳細画面に戻り，反映されていることが確認できます。(Railsチュートリアル学習した人には分かるはず...)
+<img width="1335" alt="kakehashi_screen_shot_8" src="https://user-images.githubusercontent.com/82424928/123731872-01374d80-d8d4-11eb-81d8-f4ecd0f6a885.png">
+
