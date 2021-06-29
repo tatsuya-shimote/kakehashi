@@ -35,3 +35,21 @@ Twitterで「同じ未経験で学習している人と励ましあったり，�
 保存ボタンを押すと詳細画面に戻り，反映されていることが確認できます。(Railsチュートリアルを学習した人には分かるはず...)
 <img width="1335" alt="kakehashi_screen_shot_8" src="https://user-images.githubusercontent.com/82424928/123731872-01374d80-d8d4-11eb-81d8-f4ecd0f6a885.png">
 
+# 使用技術
+- Ruby 2.6.5
+- Ruby on Rails 6.0.3.7
+- HTML/CSS
+- MySQL 5.7
+- AWS
+  - S3
+- Heroku
+
+# 機能一覧
+- ユーザー登録/ログイン機能  
+- グループ作成機能  
+- ユーザープロフィール編集機能
+  - ユーザー名の変更
+  - プロフィール画像の設定(S3)
+  - プロフィール文の編集
+- ページネーション機能(kaminari)
+- チャット機能(Action Cable, Ajax)
